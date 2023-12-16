@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Onepage</title>
+  <!-- Import de la police Montserrat -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: rgb(240, 240, 240);
+      overflow-x: hidden; /* Empêche le défilement horizontal */
+    }
+
+    section {
+      text-align: center;
+      color: #333; /* Couleur de texte foncée pour une meilleure lisibilité */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      height: 100vh; /* Occupation de 100% de la hauteur de l'écran */
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700; /* Gras */
+      width: 70%;
+      margin: 0 auto;
+      color: #4CAF50; /* Vert */
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 700; /* Gras */
+      width: 70%;
+      margin: 20px auto;
+      color: #2196F3; /* Bleu */
+    }
+
+    .section-2 {
+      position: relative;
+    }
+
+    h1.section-2 {
+      width: 70%;
+      margin: 50px auto 0;
+    }
+
+    .emoji {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      font-size: 50px;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+
+    .card {
+      position: relative;
+      width: 200px;
+      height: 400px;
+      background-color: rgba(255, 255, 255, 0.9); /* Blanc avec opacité */
+      margin: 15px;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translate(0, -10px);
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.2em; /* Un peu plus petit que les titres */
+      font-weight: 700; /* Gras */
+    }
+
+    .card p {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.0em; /* Un peu plus petit que les paragraphes normaux */
+      margin: 5px;
+    }
+
+    .section-3 {
+      position: relative;
+      margin-top: 50px;
+    }
+
+    h1.section-3 {
+      width: 70%;
+      margin: 50px auto 0;
+      color: #FF9800; /* Orange */
+    }
+
+    .rectangle {
+      width: 40%;
+      height: 35%;
+      background-color: rgba(255, 255, 255, 0.9); /* Blanc avec opacité */
+      margin: 50px auto 0;
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out;
+      overflow: hidden;
+    }
+
+    .rectangle:hover {
+      transform: scale(1.05);
+    }
+
+    .rectangle p {
+      text-align: center;
+      margin: 20px;
+      font-size: 0.9em; /* Un peu plus petit que les paragraphes normaux */
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 30px;
+      max-width: 500px;
+      
+    }
+
+    .images img {
+      width: 80px;
+      height: 80px;
+      border-radius: 60%;
+      transition: transform 0.3s ease-in-out;
+      margin-left: 10px;
+      
+    }
+
+    .images img:hover {
+      transform: scale(1.1);
+    }
+
+    @media only screen and (max-width: 768px) {
+      h1, h2, h3 {
+        width: 90%;
+      }
+
+      .card {
+        width: 40%;
+      }
+
+      .rectangle {
+        width: 90%;
+      }
+
+      .images img {
+        width: 80px;
+        height: 80px;
+      }
+
+      section {
+        height: 115vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1 -->
+  <section>
+    <h1>Zenith Services</h1>
+    <h2>Services pour vos serveurs discord</h2>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section-2">
+    <h1 class="section-2">Nos Services</h1>
+    <div class="card-container">
+      <div class="card">
+        <div class="emoji">🦘</div>
+        <h3>Autobump</h3>
+        <p>Notre autobump vous permet d’augmenter la visibilité de votre serveur en le bumpant toutes les 2 heures environ.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🛠️</div>
+        <h3>Création Serveur</h3>
+        <p>Nous vous proposons de nous occuper de la création de votre serveur de A à Z. Nous prenons en charge les catégories, les salons, les rôles ainsi que la configuration de bots simples.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🤖</div>
+        <h3>Bot custom</h3>
+        <p>Nous pouvons créer un ou plusieurs bots personnalisés pour vous. Toutes vos idées de fonctionnalités pourront prendre vie ! Nous avons également une solution pour l'hébergement du bot</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🎨</div>
+        <h3>Illustration</h3>
+        <p>Vous cherchez à augmenter le charme de votre serveur ? Nous vous proposons de créer des illustrations pour celui-ci.</p>
+   
+      </div>
+      <div class="card">
+        <div class="emoji">💵</div>
+        <h3>Rachat Serveur</h3>
+        <p>Vous avez un serveur inutilisé avec des membres dessus ? Nous vous le rachetons, peu importe le nombre de membres !</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section-3">
+    <h1 class="section-3">Qui sommes nous ?</h1>
+    <div class="rectangle">
+        <p>Zenith Services est un serveur créé en 2023 regroupant plusieurs services qui peuvent aider à la création de serveur, à l'illustration de ces derniers, au développement de bots personnalisés ainsi qu'au autobump sur Discord, leur faisant gagner en visibilité.</p>
+
+        <p>Le staff est à l'écoute et répond dans les plus brefs délais à votre demande et vous donnera les prix en fonction de celle-ci.</p>
+        
+        <p>Nous sommes actuellement 5 personnes à travailler dans ce serveur.</p>
+       
+    </div>
+    <div class="images">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <img src="image4.jpg" alt="Image 4">
+      <img src="image5.jpg" alt="Image 5">
+    </div>
+  </section>
+
+</body>
+</html>
